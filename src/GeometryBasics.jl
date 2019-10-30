@@ -1,6 +1,6 @@
 module GeometryBasics
 
-    using StaticArrays, Tables, StructArrays, IterTools, LinearAlgebra
+    using StaticArrays, Tables, StructArrays, IterTools, LinearAlgebra, GeoInterfaceRFC
 
     using Base: @propagate_inbounds
 
@@ -16,6 +16,7 @@ module GeometryBasics
     include("meshes.jl")
     include("lines.jl")
     include("boundingboxes.jl")
+    include("geointerface.jl")
 
     export AbstractGeometry, GeometryPrimitive
     export Mat, Point, Vec
